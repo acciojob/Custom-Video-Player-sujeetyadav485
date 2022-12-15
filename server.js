@@ -1,7 +1,3 @@
-const app = require("./index.js");
-app.listen(3000, () => {
-  console.log('server started');
-});
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
 const progress = player.querySelector('.progress');
