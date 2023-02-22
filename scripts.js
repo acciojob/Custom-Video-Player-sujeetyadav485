@@ -7,6 +7,9 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
+
+
+
 // Get the video player and all the necessary controls
 // const player = document.querySelector('.player');
 // const video = player.querySelector('.viewer');
