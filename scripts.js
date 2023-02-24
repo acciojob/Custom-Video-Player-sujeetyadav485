@@ -7,23 +7,16 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
-// Get the video player and all the necessary controls
-// const player = document.querySelector('.player');
-// const video = player.querySelector('.viewer');
-// const progress = player.querySelector('.progress');
-// const progressBar = player.querySelector('.progress__filled');
-// const toggle = player.querySelector('.toggle');
+
 const volume = player.querySelector('input[name="volume"]');
 const playbackRate = player.querySelector('input[name="playbackRate"]');
-// const skipButtons = player.querySelectorAll('[data-skip]');
 
-// Function to toggle the play/pause button
 function togglePlay() {
   const icon = this.paused ? '►' : '❚ ❚';
   toggle.textContent = icon;
 }
 
-// Function to update the progress bar
+
 function handleProgress() {
   const percent = (video.currentTime / video.duration) * 100;
   progressBar.style.flexBasis = `${percent}%`;
