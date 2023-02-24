@@ -7,9 +7,6 @@ const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
 
-
-
-
 // Get the video player and all the necessary controls
 // const player = document.querySelector('.player');
 // const video = player.querySelector('.viewer');
@@ -55,4 +52,4 @@ video.addEventListener('pause', togglePlay);
 video.addEventListener('timeupdate', handleProgress);
 volume.addEventListener('input', handleVolume);
 playbackRate.addEventListener('input', handlePlaybackRate);
-skipButtons.forEach(button => button.addEventListener('click', skip));
+skipButtons.forEach(button => button.addEventListener('click', skip));
